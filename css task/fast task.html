@@ -32,22 +32,28 @@
       img {
         height: 80px;
         width: 80px;
+        margin: 10px;
+        padding: 0px 30px 0px 60px;
       }
       .justify {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        align-items: baseline;
-        justify-content: space-evenly;
-        margin-top: 70px;
+        align-items: center;
+        justify-content:space-evenly;
+        
       }
       .around {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
-        align-items: baseline;
-        justify-content: space-evenly;
-        margin-top: 40px;
-        margin-left: 90px;
-        margin-right: 90px;
+        align-items: center;
+        justify-content:space-evenly;
+        
+      }
+      span{
+        text-transform: capitalize;
+        
       }
     </style>
   </head>
@@ -61,17 +67,18 @@
     </p>
 
     <div class="justify">
-      <div class=""><img src="./img/instagram.png" alt="instagram" /></div>
-      <div class=""><img src="./img/linkedin.png" alt="linkedin" /></div>
-      <div class=""><img src="./img/messenger.png" alt="messenger" /></div>
-      <div class=""><img src="./img/search.png" alt="search" /></div>
-      <div class=""><img src="./img/slack.png" alt="slack" /></div>
+      <div class=""><img src="./img/instagram.png"  alt="instagram" /><p><span>instagram</span></p></div>
+      <div class=""><img src="./img/linkedin.png" alt="linkedin" /><p><span>linkedin</span></p></div>
+      <div class=""><img src="./img/messenger.png" alt="messenger" /><p><span>messenger</span></p></div>
+      <div class=""><img src="./img/search.png" alt="search" /><p><span>search</span></p></div>
+      <div class=""><img src="./img/slack.png" alt="slack" /><p><span>slack</span></p></div>
     </div>
+    
     <div class="around">
-      <div class="6"><img src="./img/tik-tok.png" alt="tik-tok" /></div>
-      <div class="7"><img src="./img/twitter.png" alt="twitter" /></div>
-      <div class="8"><img src="./img/whatsapp.png" alt="whatsapp" /></div>
-      <div class="9"><img src="./img/youtube.png" alt="youtube" /></div>
+      <div class="6"><img src="./img/tik-tok.png" alt="tik-tok" /><p><span>tik-tok</span></p></div>
+      <div class="7"><img src="./img/twitter.png" alt="twitter" /><p><span>twitter</span></p></div>
+      <div class="8"><img src="./img/whatsapp.png" alt="whatsapp" /><p><span>whatsapp</span></p></div>
+      <div class="9"><img src="./img/youtube.png" alt="youtube" /><p><span>youtube</span></p></div>
     </div>
   </body>
 </html>
