@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./aseet/Background.png);
+    /* background-color: #eae8d7; */
+    /* background-image: url(./aseet/Texture.png); */
+    /* background-repeat: no-repeat; */
+    scroll-behavior: unset;
+}
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.raw{
+    display: flex;
+}
+.col-33{
+    width: 33.33%;
+}
+.marg-l{
+    margin:0 0 auto auto;
+}
+.posi-relative{
+    position: relative;
+}
+.posi-absolute{
+    position: absolute;
+}
+.search-bar{
+    border: 0px;
+    border-bottom: 1px solid #006195;
+    background-color: transparent;
+}
+.fa-magnifying-glass{
+    right: 4px;
+    top: 1px;
+}
+.menu-bar{
+    margin-top: 66px;
+}
+.logo{
+    margin-top: 47px;
+}
+.search{
+    margin-top: 66px;
+    margin-right: 20px;
+}
+.header-sketch-l{
+    left: -75px;
+    top: 211px;
+}
+.header-sketch-r{
+    right: -200px;
+    bottom: 22px;
+}
+.rect-r-head{
+    right: 93px;
+    bottom:68px;
+}
+.rect-l-head{
+    left: 93px;
+    bottom:68px;
+}
+.button-l-head{
+    background-color: transparent;
+    border: 0px;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 37px;
+    color: #ce5008;
+    font-weight: 500;
+    left:  107px;
+    bottom: -22px;
+}
+.button-r-head{
+    background-color: transparent;
+    border: 0px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 37px;
+    color: #ce5008;
+    font-weight: 500;
+    right: 111px;
+    bottom: 89px;
+}   
+.main-heading{
+    width: 600px;
+    height: 188px;
+    text-align: center;
+    margin: 12px auto;
+    top: 50px;
+}
+.main-heading h1{
+    font-size: 107px;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    color: #0b5e98;
+    line-height: 96px;
+}
+.main-heading span{
+    font-size: 33px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "Old Standard TT";
+    text-align: center;
+    bottom: 16px;
+}
+.span-est{
+    left: -35px;
+}
+.span-1999{
+    right: -35px;
+}
+.text-center{
+    text-align: center;
+}
+.align-item-end{
+    align-items: end;
+}
+.align-item-center{
+    align-items: center;
+}
+.header-txt{
+    color: #0b5e98;
+    font-weight: 400;
+    font-family: "DM Sans";
+}
+.text-justify{
+    text-justify: justify;
+}
+.para-l{
+margin-bottom: 7em;
+margin-right: 40px;
+}
+.para-r{
+margin-bottom: 9em;
+margin-left: 40px;
+}
+.head-img{
+    height:418px ;
+    width: 366px;
+}
