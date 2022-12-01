@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Basic, Effects & Advance</title>
+    <style>
+        *{
+            background-color: rgb(1, 20, 14);
+            margin: 0;padding: 20px;
+            color: azure;
+        }
+        hr{
+            border-color: black;
+        }
+        h3:hover{
+            color: red;
+        }
+        p:hover{
+            color: rgb(232, 161, 161);
+        }
+        li:hover{
+            color: rgb(232, 161, 161);
+        }
+        ul:hover{
+            color: rgb(240, 140, 18);
+        }
+        h1{
+            text-align: center;
+        }
+        /* Main styles */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+.text {
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+.text:nth-child(5n+1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n+2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+.text:nth-child(5n+3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+.text:nth-child(5n+4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+.text:nth-child(5n+5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+/* Other styles */
+html, body {
+  height: 25%;
+}
+
+.ani{
+  background: #111;
+  background-size: 25% ;
+  font: 33px Open Sans, Impact;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.body-title{
+    position:relative;
+    height: 300px;
+}
+    </style>
+</head>
+<body>
+  <div class="body-title">
+<svg viewBox="0 0 600 300">
+    <symbol id="s-text">
+      <text class="ani" text-anchor="middle" x="50%" y="50%" dy=".35em">JQuery Basic, Effects & Advance</text>
+    </symbol>
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+    <use class="text" xlink:href="#s-text"></use>
+  </svg>
+</div>
+    <hr>
+    <h3>1.What is JQuery?</h3>
+    <p>jQuery is a small, light-weight and fast JavaScript library. It is cross-platform and supports different types of browsers. It is also referred as ?write less do more? because it takes a lot of common tasks that requires many lines of JavaScript code to accomplish, and binds them into methods that can be called with a single line of code whenever needed. It is also very useful to simplify a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.</p>
+    <h3>2.How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery,
+        JQuery Animation?</h3>
+    <p>
+        <ul>
+            <li> jQuery can equally interpret the CSS and DOM formatting of multiple-word properties. For example, jQuery understands and returns the correct value for both . css( "background-color" ) and . css( "backgroundColor" ) .</li>
+            <li>We are going to use some jQuery UI addClass() and removeClass() methods. addClass() method: It is used to add specified classes to each of the targeted elements while animating all style changes. removeClass() method: It is used to remove the classes from the element while animating all style changes.</li>
+            <li>The jQuery animate() method is used to create custom animations. Syntax: $(selector).animate({params},speed,callback); The required params parameter defines the CSS properties to be animated.</li>
+        </ul>
+    </p>
+    <h3>3.How to create slider with animation?</h3>
+    <p>
+        <ul>JQuery has the following slide methods:
+            <li>slideDown()</li>
+             <li>   slideUp()</li>
+             <li>   slideToggle()</li>
+        </ul>
+        <ul>The following method has animation
+            <li>The animate() method performs a custom animation of a set of CSS properties. This method changes an element from one state to another with CSS styles. The CSS property value is changed gradually, to create an animated effect. Only numeric values can be animated (like "margin:30px").</li>
+        </ul>
+    </p>
+</body>
+</html>
