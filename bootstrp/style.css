@@ -1,0 +1,69 @@
+*{
+    margin: 15px;
+    padding: 0;
+    
+}
+div{
+    border: 1px solid rgb(0, 0, 0);
+}
+.row{
+    border: 1px solid red;
+}
+h1{
+    color: crimson;
+    text-align: center;
+}
+h1:hover{
+    color: rgb(50, 156, 232);
+    font-size: 2.6rem;
+}
+h3:hover{
+    color: rgb(239, 158, 7);
+}
+/* background */
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    background: linear-gradient(90deg, #e4c0c0, #add2f7, #f5d6d6, #bddeff);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBG 7s ease infinite forwards;
+    animation: gradientBG 7s ease infinite forwards;
+  }
+  .container {
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+  }
+  h1 {
+    font-weight: 900;
+  }
+  a {
+    text-decoration: none;
+    color: #212121;
+  }
+  @-webkit-keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
