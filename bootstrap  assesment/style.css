@@ -1,0 +1,25 @@
+.logo{
+    width: 150px;
+}
+.about-p{
+  /* width: 700px; */
+  text-align: justify;
+}
+.graph{
+  width: 400px;
+  margin-top: 69px;
+}
+.text-justify{
+  text-align: justify;
+}
+.first-background{
+  background-repeat: no-repeat;
+  width: 1239px;
+  height: 600px;
+}
+.part-3-vid{
+  width: 1239px;
+}
+.form-group{
+  margin: 20px;
+}
