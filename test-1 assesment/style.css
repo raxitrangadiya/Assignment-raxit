@@ -1,0 +1,16 @@
+*{
+    margin: 10px;
+    padding: 0px;
+}
+.border{
+    border-color: red;
+    margin: 0 auto;
+}
+.head-title{
+    color: brown;
+    padding: 2px;
+}
+input{
+    border: 0px solid ;
+    border-bottom: 1px dotted #000;
+}
