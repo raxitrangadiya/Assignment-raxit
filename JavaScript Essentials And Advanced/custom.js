@@ -72,7 +72,7 @@
 //     if (confirm(question)) yes();
 //     else no();
 //   }
-  
+
 //   ask(
 //     "Do you agree?",
 //     function() { alert("You agreed."); },
@@ -86,7 +86,7 @@
 //     firstName: "John",
 //     surname: "Doe",
 //   };
-    
+
 //   user.firstName.value = "pete";
 //   delete  user.firstName;
 
@@ -152,8 +152,8 @@
 
 //   function sumSalaries(ss) {
 //       let sum =0;
-    
-        
+
+
 //         for (const item of ss) {
 //             sum+=item
 //         }
@@ -167,13 +167,13 @@
 //     name: "John",
 //     years: 30
 //   };
-  
+
 //   var {name, years: age, isAdmin = false} = que;
-  
+
 //   alert( name ); // John
 //   alert( age ); // 30
 //   alert( isAdmin ); // false
-  
+
 
 
 // //<<<<<<<-----------question -13---------->>>>>>>
@@ -189,7 +189,7 @@
 //       x.type = "password";
 //     }
 //   }
-  
+
 
 
 
@@ -433,7 +433,7 @@
 //       }
 //       form.submit()
 // }
-    
+
 
 
 
@@ -468,26 +468,26 @@
 
 // //<<<<<<<-----------question -19---------->>>>>>>
 
-(function ($) {
-    $(function () {
-$('.slider').slick({
-            dots: true,
-            prevArrow: '<a class="slick-prev slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-left"><svg class="icon__cnt"><use xlink:href="#ei-arrow-left-icon"></use></svg></div></a>',
-            nextArrow: '<a class="slick-next slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-right"><svg class="icon__cnt"><use xlink:href="#ei-arrow-right-icon"></use></svg></div></a>',
-            customPaging: function (slick, index) {
-                var targetImage = slick.$slides.eq(index).find('img').attr('src');
-                return '<img src=" ' + targetImage + ' "/>';
-            }
-        });
+// (function ($) {
+//     $(function () {
+//         $('.slider').slick({
+//             dots: true,
+//             prevArrow: '<a class="slick-prev slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-left"><svg class="icon__cnt"><use xlink:href="#ei-arrow-left-icon"></use></svg></div></a>',
+//             nextArrow: '<a class="slick-next slick-arrow" href="#" style=""><div class="icon icon--ei-arrow-right"><svg class="icon__cnt"><use xlink:href="#ei-arrow-right-icon"></use></svg></div></a>',
+//             customPaging: function (slick, index) {
+//                 var targetImage = slick.$slides.eq(index).find('img').attr('src');
+//                 return '<img src=" ' + targetImage + ' "/>';
+//             }
+//         });
 
 
-    });
-})(jQuery);
+//     });
+// })(jQuery);
 
 
-//<<<<<<<-----------question -20---------->>>>>>>
-const form = document.getElementById('form')
+// //<<<<<<<-----------question -20---------->>>>>>>
+// const form = document.getElementById('form')
 
-form.addEventListener('submit',form)=>{
-    event.preventDefault()
-}
+// form.addEventListener('submit', form)=> {
+//     event.preventDefault()
+// }
