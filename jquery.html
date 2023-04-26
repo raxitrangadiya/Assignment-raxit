@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+ <title>Password Checker</title>
+ <style>
+    #pass {
+    padding:4px;
+    margin:2px;
+    border:solid 1px #999;
+    } 
+    div { 
+    margin-top:5px;
+    }
+    .pull-left {
+    float:left;
+    padding: 1px 7px 1px 7px;
+    } 
+    </style>
+</head>
+<body>
+ <h1>Password Checker</h1>
+ <form id="form" name="form">
+ <input class="pull-left" data-display="passStats" id="pass" size="20"
+ type="password">
+ <div class="pull-left" id="passStats"></div>
+ </form>
+ <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="passChecker.jquery.js"></script>
+<script>
+    $(document).ready(function(){
+    
+    $('#form').submit(function(){
+    return false;
+    });
+    
+    $('#pass').pStrength({
+    'changeBackground' : false,
+    'onPasswordStrengthChanged' : function(passwordStrength, strengthPercentage) {
+    if ($(this).val()) {
+      $.fn.pStrength('changeBackground', "#passStats", passwordStrength); 
+    if (strengthPercentage >= 0 && strengthPercentage < 34 ) { 
+      $('#' + $(this).data('display')).html('weak');
+   
+    }else if (strengthPercentage >= 34 && strengthPercentage < 60 ) { 
+      $('#' + $(this).data('display')).html('medium');
+    }else if (strengthPercentage >= 60 && strengthPercentage <= 100 ) { 
+      $('#' + $(this).data('display')).html('strong');
+    }
+    } else {
+      $.fn.pStrength('resetStyle', "#passStats");
+      $('#' + $(this).data('display')).html('');
+    }
+    
+    },
+    'onValidatePassword': function(strengthPercentage) {
+    $('#' + $(this).data('display')).html(
+       $('#' + $(this).data('display')).html()
+    );
+    
+    $('#form').submit(function(){
+    return true;
+    });
+    }
+    });
+    });
+    </script>
+</body>
+</html>

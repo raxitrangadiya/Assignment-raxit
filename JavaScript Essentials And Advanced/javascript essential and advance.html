@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript essential and advanced</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- que-14 -->
+
+<p>Click the radio button to toggle between password visibility:</p>
+
+Password:<input type="password" value="your password is fack" id="myInput"><br><br>
+<input type="checkbox" onclick="myFunction()">Show Password
+
+<!-- que-15 -->
+
+<div id="buttonsContainer"></div>
+
+
+<!-- que-16 -->
+<header class="header">
+    <div class="container">
+        <div class="row-wrap">
+            <div class="logo-wrap">
+                <span class="logo">LOGO</span>
+            </div>
+            <div class="nav-wrap">
+                <ul class="nav-list">
+                    <li class="active"><a href="#">About-us</a></li>
+                    <li><a href="#">Contact-us</a></li>
+                    <li class="with-submenu">
+                        <a href="#">Blog</a>
+                        <div class="submenu">
+                            <ul class="submenu-inner">
+                                <li><a href="#">Link1</a></li>
+                                <li><a href="#">Link2</a></li>
+                                <li><a href="#">Link3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+</div>
+    </div>
+</header>
+<div class="overlay"></div>
+
+<!-- que-17 -->
+<form action="aget-method.php" id= "user-form" method="get" >
+    <table >
+        <tr>
+            <td><label>First Name:</label></td>
+            <td><input type="text" id="firstname" class="in_size" name="field" autocomplete="off" autofocus="autofocus" required> <br><span id="firstNameCheck"></span></td>
+        </tr>
+         <tr>
+            <td><label>Last Name:</label></td>
+            <td><input type="text" id="lastname" name="field" class="in_size" autocomplete="off" autofocus="autofocus" required> <br><span id="lastNameCheck"></span></td>
+        </tr>
+       <tr>
+            <td><label>Email:</label></td>
+            <td><input type="text" id="email" name="field" class="in_size" autocomplete="off" autofocus="autofocus" required>
+                <br>   <span id="emailCheck"></span>  </td>
+        </tr>
+         <tr>
+            <td><label>Mobile:</label></td>
+            <td><input type="tel" id="mobile" name="Mobile" class="in_size" autocomplete="off"  autofocus="autofocus" required> <br><span id="mobileCheck"></span></td>
+        </tr>
+        <tr>
+            <td><label>Gender:</label></td>
+            <td><input type="radio"  name="gender" >Male  &nbsp; <input type="radio"  name="gender" >Female &nbsp; <span id="genderCheck"></span></td>
+            <td></td>
+           
+        </tr>
+        <tr>
+           <td><label >Date Of Birth:</label></td>
+           <td><input type="date" class="in_size" ><br> </td>
+        </tr>
+        <tr>
+            <td><label >Address:</label></td>
+            <td><textarea name="address" id="address" class="in_size" autocomplete="off" autofocus="autofocus" required></textarea><br> <span id="addressCheck"></span></td>
+        </tr>
+        <tr>
+            <td> <label>City:</label></td>
+            <td> <input type="text" id="city" class="in_size" autocomplete="off" autofocus="autofocus" required>
+                <br><span id="cityCheck"></span></td>
+        </tr>
+        <tr>
+            <td> <label >Area Pin:</label></td>
+            <td> <input type="text" id="pin" class="in_size"autocomplete="off" autofocus="autofocus" required> 
+                <br>
+            <span id="pinCheck"></span></td>
+        </tr>
+        <tr>
+            <td> <label >State:</label></td>
+            <td> <input type="text" id="state" class="in_size"autocomplete="off" autofocus="autofocus" required><br>
+            <span id="stateCheck"  ></span></td>
+        </tr>
+        <tr>
+            <td> <label >Qualification</label></td>
+            <td> <select name="Qualification" id="Qualification" >
+                <option value="Select Qualification">Select Qualification </option>
+                <option value="B.com">B.com</option>
+                <option value="B.sc">B.sc</option>
+                <option value="B.E">B.E</option>
+                <option value="B.A">B.A</option>
+                <option value="">B.A</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label class="specialization" >Specialization</label></td>
+            <td>
+                <input type="radio" name="box" >Computer Science <br>
+                <input type="radio" name="box" >Information Technology <br>
+                <input type="radio" name="box" >Computer Architecture <br>
+                <input type="radio" name="box" >Tele Communication
+            </td>
+        </tr>
+        <tr>
+            <td><Label>Password:</Label></td>
+            <td><input type="password" id="password" class="in_size" autocomplete="off" autofocus="autofocus" required><br>
+            <span id="pswCheck"></span></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit"  onclick=" return validation()"value="Registered" id="btn">
+            </td>
+        </tr>
+    </table>
+  </form>
+
+
+
+<!-- que-18 -->
+
+
+
+<h2>Modal Example</h2>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+</div>
+
+
+<!-- que-19 -->
+
+
+
+<div class="ag-format-container">
+    <div class="layout">
+        <ul class="slider">
+            <li>
+                <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-15.jpg"
+                    alt="" />
+            </li>
+            <li>
+                <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-5.jpg"
+                    alt="" />
+            </li>
+            <li>
+                <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-1.jpg"
+                    alt="" />
+            </li>
+            <li>
+                <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-10.jpg"
+                    alt="" />
+            </li>
+            <li>
+                <img src="https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_images/img-1098x549-4.jpg"
+                    alt="" />
+            </li>
+        </ul>
+    </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="ei-arrow-left-icon" viewBox="0 0 50 50">
+        <path
+            d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+        </path>
+        <path d="M25.3 34.7L15.6 25l9.7-9.7 1.4 1.4-8.3 8.3 8.3 8.3z"></path>
+        <path d="M17 24h17v2H17z"></path>
+    </symbol>
+
+    <symbol id="ei-arrow-right-icon" viewBox="0 0 50 50">
+        <path
+            d="M25 42c-9.4 0-17-7.6-17-17S15.6 8 25 8s17 7.6 17 17-7.6 17-17 17zm0-32c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15z">
+        </path>
+        <path d="M24.7 34.7l-1.4-1.4 8.3-8.3-8.3-8.3 1.4-1.4 9.7 9.7z"></path>
+        <path d="M16 24h17v2H16z"></path>
+    </symbol>
+</svg>
+
+<!-- que-20 -->
+<form>
+    <input name="email" />
+    <input name="password" />
+    <input type="submit" />
+  </form>
+  
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--que-17 script file-->
+    <script src="custom.js"></script>
+
+</body>
+</html>
