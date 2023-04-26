@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Password Validation</h3>
+    <div>
+        <label>Password:</label>
+        <input type="password" id="pass" class="validate password" name="password" value="" />
+        <span class="togglePassword">Show Password</span>
+    </div>
+    <br>
+    <div>
+        <label>Confirm Password:</label>
+        <input type="password" id="conf" class="validate passwordConfirm" name="confirmPassword" value="" />
+    </div>
+    
+    <div id="password_rules">
+        <h4>Passwords must meet these requirements:</h4>
+        <ul>
+            <li class="password_length">At least 8 characters</li>
+            <li class="password_uppercase">At least 1 uppercase letter</li>
+            <li class="password_number">at least one number</li>
+            <li class="password_match">password and confirmation must match</li>
+        </ul>
+	</div>
+    <script></script>
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #password_rules ul li {
+    /*font-size: 12px;
+    font-weight: normal;*/
+    color: #000000;
+}
+#password_rules ul li.complete {
+    color: #5DB406;
+}
+span.togglePassword {
+    color: gray;
+    font-size: 12px;
+    cursor: pointer;
+}
