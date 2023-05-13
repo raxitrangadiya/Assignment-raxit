@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header style */
+header>h1{
+    color: rgb(254, 247, 247);
+    background-color: rgb(15, 67, 67);
+    text-align: center;
+    padding: 10px 0px;
+}
+/* form data  */
+.border{
+border: 1px solid red;
+}
+table{
+    margin: 0 auto
+}
+table,td{
+    margin: 5px;
+    padding: ;
+    border: 2px solid red;
+}

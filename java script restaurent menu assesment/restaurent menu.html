@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>restauvsvsrent menu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Resturent Booking</h1>
+    </header>
+    <table border="1px">
+      <form method="post">
+        <tr>
+          <td><label for="Choise">Choise of booking:</label></td>
+          <td>
+            <select name="" id="">
+              <option value="halfday">Choice of booking</option>
+              <option value="halfday">Full day booking</option>
+              <option value="halfday">Half day booking</option>
+              <option value="halfday">Hourly booking</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+            <td><label for="name">Name  :</label></td>
+            <td><input type="text" placeholder="input your Name" id="uname" name="uname" required></td>
+        </tr>
+        <tr>
+            <td><label for="mobileno">Mobile Number  :</label></td>
+            <td><input type="number" placeholder="+91" id="mobileno" name="mobileno" required></td>
+        </tr>
+        <tr>
+            <td><label for="mail">Email  :</label></td>
+            <td><input type="email" placeholder="input your mail" id="mail" name="mail" required></td>
+        </tr>
+        <tr>
+            <td><label for="person">No of person  :</label></td>
+            <td><input type="number" placeholder="number of person" id="person" name="person" required></td>
+        </tr>
+        <tr>
+            <td><label for="a_date">Date  :</label></td>
+            <td><input type="date" name="a_date" id="a_date" required></td>
+        </tr>
+        <tr>
+            <td><label for="a_time">Time  :</label></td>
+            <td><input type="time" name="a_time" id="a_time" required></td>
+        </tr>
+        <tr>
+            <td><label for="a_slot">Slot  :</label></td>
+            <td>
+                <select name="a_slot" id="a_slot">
+                    <option value="halfday">Book Your Slot</option>
+                    <option value="halfday">Breakfast</option>
+                    <option value="halfday">Lunch</option>
+                    <option value="halfday">Dinner</option>
+                  </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="Submit">
+            </td>
+        </tr>
+      </form>
+    </table>
+    <script src="restaurent.js"></script>
+  </body>
+</html>
