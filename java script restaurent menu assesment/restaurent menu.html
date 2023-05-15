@@ -9,25 +9,27 @@
   </head>
   <body>
     <header>
-      <h1>Resturent Booking</h1>
+      <h1>~~Resturent Booking~~</h1>
     </header>
-    <table border="1px">
-      <form method="post">
+<section id="sec-1">
+    <div class="data col-30">
+    <table  class="form-tab" >
+    <form method="post">
         <tr>
-          <td><label for="Choise">Choise of booking:</label></td>
-          <td>
-            <select name="" id="">
-              <option value="halfday">Choice of booking</option>
-              <option value="halfday">Full day booking</option>
+            <td><label for="Choise">Choise of booking:</label></td>
+            <td>
+                <select name="" id="">
+                    <option value="choiseofbooking">Choice of booking</option>
+                    <option value="fullday">Full day booking</option>
               <option value="halfday">Half day booking</option>
-              <option value="halfday">Hourly booking</option>
+              <option value="hourly">Hourly booking</option>
             </select>
-          </td>
-        </tr>
-        <tr>
-            <td><label for="name">Name  :</label></td>
-            <td><input type="text" placeholder="input your Name" id="uname" name="uname" required></td>
-        </tr>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="name">Name  :</label></td>
+        <td><input type="text" placeholder="input your Name" id="uname" name="uname" required></td>
+    </tr>
         <tr>
             <td><label for="mobileno">Mobile Number  :</label></td>
             <td><input type="number" placeholder="+91" id="mobileno" name="mobileno" required></td>
@@ -53,19 +55,26 @@
             <td>
                 <select name="a_slot" id="a_slot">
                     <option value="halfday">Book Your Slot</option>
-                    <option value="halfday">Breakfast</option>
-                    <option value="halfday">Lunch</option>
-                    <option value="halfday">Dinner</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
                   </select>
             </td>
         </tr>
         <tr>
-            <td>
-                <input type="button" value="Submit">
+            <td colspan="2">
+                <input type="submit" id="button" value="Submit">
             </td>
+
         </tr>
       </form>
     </table>
-    <script src="restaurent.js"></script>
-  </body>
+</div>
+<!-- result -->
+    <div class="result col-70">
+        
+    </div>
+</section>
+<script src="restaurent.js"></script>
+</body>
 </html>

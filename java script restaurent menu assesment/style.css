@@ -3,22 +3,90 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(./bgi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(22px);
+}
+#sec-1{
+    display: flex;
+}
+.col-30{
+    width: 30%;
+}
+.col-70{
+    width: 70%;
+}
 /* header style */
 header>h1{
     color: rgb(254, 247, 247);
     background-color: rgb(15, 67, 67);
+    background-color: transparent;
+    
+    /* text-decoration: l; */
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
     text-align: center;
     padding: 10px 0px;
 }
-/* form data  */
-.border{
-border: 1px solid red;
+header>h1:hover{
+    transition: 0.9s;
+    color: rgb(214, 149, 149);
 }
-table{
-    margin: 0 auto
+.form-tab{
+    
+    border: 5px double rgb(214, 218, 220);
+    /* background-color: rgb(93, 134, 134); */
+    /* background-image: url(./grunge-wall-highly-detailed-textured-600w-322786541.png); */
+    /* background-image: url(./menu\ card\ bg.jpg); */
+    background-color: transparent;
+    box-shadow: 10px;
+    height: 378;
+    width: 570;
+    /* margin-top: 10px; */
+    margin: 20px 30px;
+    color: azure;
+    /* background-color: rgb(174, 198, 237); */
 }
+#a_slot+option{
+    /* background-color: black; */
+    /* color: red; */
+}
+td>input,select{
+    width: 200px;
+    background-color: rgb(194, 221, 220);
+    border-radius: 10px;
+    border-color: transparent;
+}
+input:hover,select:hover{
+    transition: 0.4s;
+    background-color: rgb(93, 165, 163);
+    /* border: 1px solid red; */
+
+}
+/* select>option:hover{
+    color: black;
+    background-color: black;
+} */
 table,td{
-    margin: 5px;
-    padding: ;
-    border: 2px solid red;
+    padding: 10px;
+    /* margin: 5px; */
+    /* padding: ; */
+}
+#button{
+    color: antiquewhite;
+    font-size: 20px;
+    border: 1px double  yellow;
+    border-radius: 20px;
+    padding: 5px 22px;
+    letter-spacing: 3px;
+    /* margin-left: 80px; */
+    background-color: transparent;
+    transition: 0.2s;
+}
+#button:hover{
+    background-color: rgb(220, 206, 206);
+    color: rgb(0, 0, 0);
+    border: 1px double  rgb(168, 18, 70);
 }
