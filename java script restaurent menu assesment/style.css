@@ -42,8 +42,8 @@ header>h1:hover{
     /* background-image: url(./menu\ card\ bg.jpg); */
     background-color: transparent;
     box-shadow: 10px;
-    height: 578;
-    width: 570;
+    height: auto ;
+    width: auto;
     /* margin-top: 10px; */
     margin: 20px 30px;
     color: azure;

@@ -10,7 +10,7 @@
 
 
             let tr_date = document.createElement("tr");//date create element and properti assigned//
-            tr_date.setAttribute('class', 'date');
+            tr_date.setAttribute('class', 'thisrequired');
             let td_label = document.createElement("td");
             let td_label_date = document.createElement("label");
             let text1 = document.createTextNode('Date');
@@ -18,9 +18,10 @@
             td_date.setAttribute('id', 'date_td');
             let input_date = document.createElement("input");
             input_date.setAttribute('type', 'date');
+            // input_date.setAttribute('classs', 'thisrequired');
 
             let tr_slot = document.createElement("tr");//slot create element and properti assigned//
-                tr_slot.setAttribute('class', 'slot');
+                tr_slot.setAttribute('class', 'thisrequired');
                 let td_label_s = document.createElement("td");
                 let td_label_slot = document.createElement("label");
                 let text2 = document.createTextNode('Slot');
@@ -28,7 +29,7 @@
                 td_slot.setAttribute('id', 'slot_td');
 
             let tr_time = document.createElement("tr");//time create element and properti assigned//
-            tr_time.setAttribute('class', 'time');
+            tr_time.setAttribute('class', 'thisrequired');
             let td_label_t = document.createElement("td");
             let td_label_time = document.createElement("label");
             let text3 = document.createTextNode('time');
@@ -106,3 +107,8 @@
                 td_time.appendChild(input_time);
             }
         });
+//this fieleld is required ERROR 
+
+
+
+        

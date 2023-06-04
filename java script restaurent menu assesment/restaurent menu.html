@@ -15,8 +15,8 @@
   </header>
   <section id="sec-1">
     <div class="data col-30">
-      <table class="form-tab">
-        <form method="post">
+      <form method="post">
+          <table class="form-tab">
           <tr>
             <td><label for="bookingOption">Choise of booking:</label></td>
             <td>
@@ -31,58 +31,41 @@
           <tr>
             <td><label for="uname">Name :</label></td>
             <td>
-              <input type="text" placeholder="input your Name" id="uname" name="uname" required />
+              <input type="text" class="thisrequired" placeholder="input your Name" id="uname" name="uname" required />
             </td>
           </tr>
+        
           <tr>
             <td><label for="mobileno">Mobile Number :</label></td>
             <td>
-              <input type="number" placeholder="+91" id="mobileno" name="mobileno" required />
+              <input type="number" placeholder="+91" class="thisrequired" id="mobileno" name="mobileno" required />
             </td>
           </tr>
           <tr>
             <td><label for="mail">Email :</label></td>
             <td>
-              <input type="email" placeholder="input your mail" id="mail" name="mail" required />
+              <input type="email" placeholder="input your mail" class="thisrequired" onkeyup="checkemail(this,'emailerror')" id="mail" name="mail" required />
             </td>
           </tr>
           <tr>
             <td><label for="person">No of person :</label></td>
             <td>
-              <input type="number" placeholder="number of person" id="person" name="person" required />
+              <input type="number" placeholder="number of person" id="person" class="thisrequired" name="person" required />
             </td>
           </tr>
-          <!-- <tr>
-            <td><label for="a_date">Date :</label></td>
-            <td><input type="date" name="a_date" id="a_date" required /></td>
-          </tr>
-          <tr>
-            <td><label for="a_time">Time :</label></td>
-            <td><input type="time" name="a_time" id="a_time" required /></td>
-          </tr>
-          <tr>
-            <td><label for="a_slot">Slot :</label></td>
-            <td>
-              <select name="a_slot" id="a_slot">
-                <option value="halfday">Book Your Slot</option>
-                <option value="breakfast">Breakfast</option>
-                <option value="lunch">Lunch</option>
-                <option value="dinner">Dinner</option>
-              </select>
-            </td>
-          </tr> -->
           <tr id="butTon">
             <td colspan="2">
               <input type="submit" id="button" value="Submit" />
             </td>
           </tr>
+        </table>
         </form>
-      </table>
     </div>
     <!-- result -->
     <div class="result col-70"></div>
   </section>
   <script src="restaurent.js"></script>
+  
 </body>
 
 </html>
