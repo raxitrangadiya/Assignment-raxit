@@ -1,0 +1,8 @@
+.Nav-link{
+    color: rgb(247, 242, 242);
+    font-size: large;
+    font-weight: bold;
+}
+.active{
+    color: rgb(225, 76, 59) !important;
+}
