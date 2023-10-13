@@ -7,9 +7,9 @@ body{
 .list-item>li{
 color: rgb(255, 255, 255) ;
 }
-ul li:hover{
-/* color: rgb(4, 16, 12); */
-}
+/* ul li:hover{
+color: rgb(4, 16, 12);
+} */
 .under-list>p{
     color:whitesmoke !important ;
 }

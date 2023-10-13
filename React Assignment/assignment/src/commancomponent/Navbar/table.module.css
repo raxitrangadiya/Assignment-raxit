@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(228, 59, 102); */
+    background-image: url(https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&w=1815&h=1020.9375&fit=crop&crop=faces);
+    background-repeat: no-repeat;
+  }
+table{
+    width: 60%;
+    padding: 60px;
+}
+/* table tr{
+    border: 1px solid red;
+    background-color: red;
+} */
+.tdata tr{
+    border: 1px solid red;
+}
+/* tr{
+    border-bottom: 1px solid black;
+} */
+
+  .tdata td{
+    width: 5%;
+    padding: 10px 20px;
+}
+.in_size{
+    width: 300px;
+    padding: 3px;
+}
+#btn{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+#address{
+    height: 100px;
+}
